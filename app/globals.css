@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: var(--font-geist-sans), 'Geist Fallback';
+  --font-mono: var(--font-geist-mono), 'Geist Mono Fallback';
+  
+  /* Joybeto Dark Theme */
+  --color-background: #050510;
+  --color-surface: #0d0d1a;
+  --color-surface-elevated: #141428;
+  --color-border: #2a2a45;
+  --color-border-light: #1e1e35;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #8888aa;
+  --color-text-muted: #5a5a7a;
+  --color-primary: #1a6ef5;
+  --color-primary-dark: #0d4bc4;
+  --color-accent: #f5a623;
+  --color-success: #10b981;
+  --color-danger: #f52d2d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: #050510;
+  color: #ffffff;
+  font-family: var(--font-sans);
+}
+
+body {
+  background: #050510;
+  color: #ffffff;
+}
+
+button {
+  font-family: var(--font-sans);
+}
