@@ -35,9 +35,9 @@ export default function ActionButtons() {
   ]
 
   return (
-    <div className="mx-3.5 my-2.5 bg-[#141428] rounded-3.5 p-1 flex border border-[#1e1e35]">
+    <div className="mx-3.5 my-2.5 bg-[#141428] rounded-3.5 p-3 flex gap-2 border border-[#1e1e35]">
       {actions.map((action) => (
-        <Link key={action.id} href={action.href} className="flex-1 flex flex-col items-center gap-1.5 cursor-pointer hover:opacity-80 transition-opacity">
+        <Link key={action.id} href={action.href} className="flex-1 flex flex-col items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
           <div
             style={{ backgroundColor: action.bgColor }}
             className="w-10 h-10 rounded-[11px] flex items-center justify-center"

@@ -13,6 +13,29 @@ export const metadata: Metadata = {
   title: 'Joybeto - Play & Win',
   description: 'Play exciting games and win big rewards with Joybeto',
   generator: 'v0.app',
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/logo.png',
+  },
+  openGraph: {
+    title: 'Joybeto - Play & Win',
+    description: 'Play exciting games and win big rewards with Joybeto',
+    images: [
+      {
+        url: '/logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Joybeto Logo',
+      }
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Joybeto - Play & Win',
+    description: 'Play exciting games and win big rewards with Joybeto',
+    images: ['/logo.png'],
+  },
 }
 
 export const viewport: Viewport = {

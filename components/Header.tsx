@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Header() {
   return (
     <div className="bg-[#0d0d1a] px-4 py-2 flex items-center justify-between">
@@ -10,10 +12,14 @@ export default function Header() {
 
       {/* Logo */}
       <div className="flex items-center gap-1.5">
-        <div className="w-7 h-7 bg-gradient-to-br from-[#1a6ef5] to-[#0d4bc4] rounded-md flex items-center justify-center">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff">
-            <path d="M12 2L4 7v10l8 5 8-5V7L12 2z"/>
-          </svg>
+        <div className="w-8 h-8 flex items-center justify-center">
+          <Image 
+            src="/logo.png" 
+            alt="Joybeto" 
+            width={32} 
+            height={32}
+            className="w-full h-full object-contain"
+          />
         </div>
         <div>
           <div className="text-white text-sm font-black">JOYBETO</div>
