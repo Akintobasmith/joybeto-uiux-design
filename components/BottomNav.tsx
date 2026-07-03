@@ -48,16 +48,15 @@ export default function BottomNav({ activeNav, setActiveNav }: BottomNavProps) {
       ),
     },
     {
-      id: 'live',
-      label: 'Live',
-      href: '/live-games',
+      id: 'license',
+      label: 'License',
+      href: '/license',
       icon: (active: boolean) => (
         <svg viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`w-5 h-5 ${active ? 'stroke-[#1a6ef5]' : 'stroke-[#5a5a7a]'}`} fill="none">
-          <circle cx="12" cy="12" r="1"/>
-          <path d="M12 1v6m0 6v6"/>
-          <path d="M4.22 4.22l4.24 4.24m5.08 5.08l4.24 4.24"/>
-          <path d="M1 12h6m6 0h6"/>
-          <path d="M4.22 19.78l4.24-4.24m5.08-5.08l4.24-4.24"/>
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="12" y1="11" x2="12" y2="17"/>
+          <line x1="9" y1="14" x2="15" y2="14"/>
         </svg>
       ),
     },
@@ -104,7 +103,7 @@ export default function BottomNav({ activeNav, setActiveNav }: BottomNavProps) {
         <Link
           key={item.id}
           href={item.href}
-          onClick={() => setActiveNav(item.id)}
+          onClick={() => setActiveNav('license')}
           className="flex flex-col items-center gap-1.5 cursor-pointer flex-1"
         >
           {item.icon(activeNav === item.id)}

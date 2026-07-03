@@ -43,7 +43,12 @@ export default function Home() {
         </div>
 
         {/* Scrollable Content */}
-        <div className="overflow-y-auto max-h-[720px] pb-20" style={{ scrollbarWidth: 'none' }}>
+        <div className="overflow-y-auto h-[720px] pb-24" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+          <style>{`
+            div::-webkit-scrollbar {
+              display: none;
+            }
+          `}</style>
           <Header />
           <WalletCard />
           <ActionButtons />
