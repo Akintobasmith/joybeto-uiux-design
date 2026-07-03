@@ -34,7 +34,7 @@ export default function AccountPage() {
         </div>
 
         {/* Account Menu */}
-        <div className="space-y-2">
+        <div className="space-y-4 mt-6">
           <Link
             href="/deposit"
             className="flex items-center justify-between bg-[#1a1a2e] border border-[#2a2a45] rounded-xl p-4 hover:bg-[#252540] transition-colors"

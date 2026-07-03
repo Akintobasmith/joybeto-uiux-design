@@ -29,12 +29,13 @@ export default function StatisticsPage() {
           ))}
         </div>
 
-        <div className="space-y-2">
+        <div className="space-y-4 mt-4">
           <h3 className="text-white font-bold text-lg">Game Statistics</h3>
-          {gameStats.map((game, idx) => (
-            <div key={idx} className="bg-[#1a1a2e] rounded-xl p-4 border border-[#2a2a45]">
-              <p className="text-white font-medium mb-3">{game.game}</p>
-              <div className="space-y-2">
+          <div className="space-y-4">
+            {gameStats.map((game, idx) => (
+              <div key={idx} className="bg-[#1a1a2e] rounded-xl p-4 border border-[#2a2a45]">
+                <p className="text-white font-medium mb-3">{game.game}</p>
+                <div className="space-y-2">
                 <div className="flex justify-between text-xs mb-1">
                   <span className="text-[#8888aa]">Wins</span>
                   <span className="text-white font-bold">{game.wins}</span>
@@ -48,7 +49,8 @@ export default function StatisticsPage() {
                 </div>
               </div>
             </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </GamePageWrapper>

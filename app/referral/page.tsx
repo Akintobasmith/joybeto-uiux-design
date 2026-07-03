@@ -14,7 +14,7 @@ export default function ReferralPage() {
         </div>
 
         {/* Your Code */}
-        <div className="space-y-3">
+        <div className="space-y-4">
           <label className="text-white text-sm font-medium">Your Referral Code</label>
           <div className="flex gap-2">
             <input
@@ -30,9 +30,9 @@ export default function ReferralPage() {
         </div>
 
         {/* Share Options */}
-        <div className="space-y-2">
+        <div className="space-y-4 mt-4">
           <p className="text-white text-sm font-medium">Share Your Code</p>
-          <div className="grid grid-cols-4 gap-2">
+          <div className="grid grid-cols-4 gap-3">
             <button className="bg-[#1a1a2e] border border-[#2a2a45] rounded-lg p-3 text-2xl hover:bg-[#252540] transition-colors">
               📱
             </button>
@@ -49,7 +49,7 @@ export default function ReferralPage() {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-3 gap-3 mt-4">
           <div className="bg-[#1a1a2e] rounded-xl p-3 border border-[#2a2a45] text-center">
             <p className="text-white font-bold text-lg">12</p>
             <p className="text-[#8888aa] text-xs">Friends Referred</p>
@@ -65,8 +65,8 @@ export default function ReferralPage() {
         </div>
 
         {/* Referred Friends */}
-        <div className="space-y-2">
-          <h3 className="text-white font-bold text-sm">Recent Referrals</h3>
+        <div className="space-y-4 mt-4">
+          <h3 className="text-white font-bold text-lg">Recent Referrals</h3>
           <div className="bg-[#1a1a2e] rounded-xl p-4 border border-[#2a2a45]">
             <p className="text-white text-sm mb-2">Alex Johnson</p>
             <p className="text-[#8888aa] text-xs">Earned: $50 • Joined 3 days ago</p>

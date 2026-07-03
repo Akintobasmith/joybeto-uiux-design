@@ -10,10 +10,10 @@ export default function SettingsPage() {
 
   return (
     <GamePageWrapper title="Settings">
-      <div className="space-y-6">
+      <div className="space-y-8">
         {/* Notifications */}
-        <div className="space-y-3">
-          <h3 className="text-white font-bold">Notifications</h3>
+        <div className="space-y-4">
+          <h3 className="text-white font-bold text-lg">Notifications</h3>
           <div className="bg-[#1a1a2e] rounded-xl p-4 border border-[#2a2a45] flex items-center justify-between">
             <span className="text-white">Push Notifications</span>
             <button
@@ -28,8 +28,8 @@ export default function SettingsPage() {
         </div>
 
         {/* Appearance */}
-        <div className="space-y-3">
-          <h3 className="text-white font-bold">Appearance</h3>
+        <div className="space-y-4">
+          <h3 className="text-white font-bold text-lg">Appearance</h3>
           <div className="bg-[#1a1a2e] rounded-xl p-4 border border-[#2a2a45] flex items-center justify-between">
             <span className="text-white">Dark Mode</span>
             <button
@@ -44,8 +44,8 @@ export default function SettingsPage() {
         </div>
 
         {/* Language */}
-        <div className="space-y-3">
-          <h3 className="text-white font-bold">Language</h3>
+        <div className="space-y-4">
+          <h3 className="text-white font-bold text-lg">Language</h3>
           <select
             value={language}
             onChange={(e) => setLanguage(e.target.value)}
@@ -60,19 +60,21 @@ export default function SettingsPage() {
         </div>
 
         {/* Account Settings */}
-        <div className="space-y-3">
-          <h3 className="text-white font-bold">Account</h3>
-          <button className="w-full bg-[#1a1a2e] border border-[#2a2a45] rounded-xl p-4 text-left text-white hover:bg-[#252540] transition-colors">
-            Self-Exclusion
-          </button>
-          <button className="w-full bg-[#1a1a2e] border border-[#2a2a45] rounded-xl p-4 text-left text-white hover:bg-[#252540] transition-colors">
-            Deposit Limits
-          </button>
+        <div className="space-y-4">
+          <h3 className="text-white font-bold text-lg">Account</h3>
+          <div className="space-y-3">
+            <button className="w-full bg-[#1a1a2e] border border-[#2a2a45] rounded-xl p-4 text-left text-white hover:bg-[#252540] transition-colors">
+              Self-Exclusion
+            </button>
+            <button className="w-full bg-[#1a1a2e] border border-[#2a2a45] rounded-xl p-4 text-left text-white hover:bg-[#252540] transition-colors">
+              Deposit Limits
+            </button>
+          </div>
         </div>
 
         {/* Danger Zone */}
-        <div className="space-y-3">
-          <h3 className="text-[#f52d2d] font-bold">Danger Zone</h3>
+        <div className="space-y-4">
+          <h3 className="text-[#f52d2d] font-bold text-lg">Danger Zone</h3>
           <button className="w-full bg-[#f52d2d] bg-opacity-10 border border-[#f52d2d] border-opacity-30 rounded-xl p-4 text-[#f52d2d] font-medium hover:bg-opacity-20 transition-colors">
             Delete Account
           </button>

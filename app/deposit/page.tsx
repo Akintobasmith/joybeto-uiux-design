@@ -32,7 +32,7 @@ export default function DepositPage() {
         </div>
 
         {/* Quick Amount Selection */}
-        <div className="space-y-2">
+        <div className="space-y-3 mt-4">
           <p className="text-white text-xs text-opacity-60">Quick Select</p>
           <div className="grid grid-cols-4 gap-2">
             {[50, 100, 500, 1000].map((amt) => (
@@ -48,9 +48,9 @@ export default function DepositPage() {
         </div>
 
         {/* Payment Methods */}
-        <div className="space-y-3">
+        <div className="space-y-4 mt-4">
           <label className="text-white text-sm font-medium">Payment Method</label>
-          <div className="space-y-2">
+          <div className="space-y-3">
             {[
               { id: 'card', name: 'Credit Card', icon: '💳' },
               { id: 'bank', name: 'Bank Transfer', icon: '🏦' },

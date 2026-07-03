@@ -33,7 +33,7 @@ export default function WithdrawPage() {
         </div>
 
         {/* Quick Amount Selection */}
-        <div className="space-y-2">
+        <div className="space-y-3 mt-4">
           <p className="text-white text-xs text-opacity-60">Quick Select</p>
           <div className="grid grid-cols-4 gap-2">
             {[50, 100, 500, 1000].map((amt) => (
@@ -49,7 +49,7 @@ export default function WithdrawPage() {
         </div>
 
         {/* Bank Details */}
-        <div className="space-y-3">
+        <div className="space-y-4 mt-4">
           <label className="text-white text-sm font-medium">Bank Account</label>
           <input
             type="text"
@@ -72,7 +72,7 @@ export default function WithdrawPage() {
         </div>
 
         {/* Fee Info */}
-        <div className="bg-[#1a1a2e] rounded-xl p-3 border border-[#2a2a45] space-y-2">
+        <div className="bg-[#1a1a2e] rounded-xl p-3 border border-[#2a2a45] space-y-2 mt-4">
           <p className="text-white text-sm">Withdrawal Details</p>
           <div className="flex justify-between text-sm">
             <span className="text-[#8888aa]">Amount</span>

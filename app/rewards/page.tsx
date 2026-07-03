@@ -12,14 +12,15 @@ export default function RewardsPage() {
 
   return (
     <GamePageWrapper title="My Rewards">
-      <div className="space-y-4">
+      <div className="space-y-6">
         <div className="bg-[#1a1a2e] rounded-2xl p-4 border border-[#2a2a45] text-center">
           <p className="text-[#8888aa] text-sm mb-2">Total Rewards Earned</p>
           <p className="text-white font-bold text-3xl">$1,750</p>
         </div>
 
-        {rewards.map((reward) => (
-          <div key={reward.id} className="bg-[#1a1a2e] rounded-xl p-4 border border-[#2a2a45]">
+        <div className="space-y-4">
+          {rewards.map((reward) => (
+            <div key={reward.id} className="bg-[#1a1a2e] rounded-xl p-4 border border-[#2a2a45]">
             <div className="flex justify-between mb-3">
               <div>
                 <p className="text-white font-medium">{reward.title}</p>
@@ -35,10 +36,11 @@ export default function RewardsPage() {
                 style={{ width: `${reward.progress}%` }}
               ></div>
             </div>
-          </div>
-        ))}
+            </div>
+            ))}
+        </div>
 
-        <button className="w-full bg-gradient-to-r from-[#1a6ef5] to-[#f5a623] text-white font-bold py-3 rounded-xl hover:shadow-lg transition-all mt-4">
+        <button className="w-full bg-gradient-to-r from-[#1a6ef5] to-[#f5a623] text-white font-bold py-3 rounded-xl hover:shadow-lg transition-all mt-6">
           Claim Rewards
         </button>
       </div>
