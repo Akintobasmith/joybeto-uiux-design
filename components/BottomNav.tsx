@@ -74,7 +74,7 @@ export default function BottomNav({ activeNav, setActiveNav }: BottomNavProps) {
   ]
 
   return (
-    <div className="absolute bottom-0 left-0 right-0 bg-[#0f0f20] border-t border-[#1e1e35] py-2 pb-5.5 flex items-center justify-around px-2">
+    <div className="fixed bottom-0 left-0 right-0 bg-[#0f0f20] border-t border-[#1e1e35] py-3 flex items-center justify-around px-2 z-40">
       {navItems.slice(0, 2).map((item) => (
         <Link
           key={item.id}
@@ -90,8 +90,8 @@ export default function BottomNav({ activeNav, setActiveNav }: BottomNavProps) {
       ))}
 
       {/* Center deposit button */}
-      <Link href={navItems[2].href} onClick={() => setActiveNav('deposit')} className="flex flex-col items-center gap-1.5 cursor-pointer -mt-5.5 flex-1">
-        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#1a6ef5] to-[#0d4bc4] flex items-center justify-center border-3 border-[#0d0d1a]">
+      <Link href={navItems[2].href} onClick={() => setActiveNav('deposit')} className="flex flex-col items-center gap-1.5 cursor-pointer flex-1">
+        <div className="w-11 h-11 rounded-full bg-gradient-to-br from-[#1a6ef5] to-[#0d4bc4] flex items-center justify-center">
           {navItems[2].icon(activeNav === 'deposit')}
         </div>
         <span className={`text-[9px] font-bold text-[#1a6ef5]`}>
@@ -103,7 +103,7 @@ export default function BottomNav({ activeNav, setActiveNav }: BottomNavProps) {
         <Link
           key={item.id}
           href={item.href}
-          onClick={() => setActiveNav('license')}
+          onClick={() => setActiveNav(item.id)}
           className="flex flex-col items-center gap-1.5 cursor-pointer flex-1"
         >
           {item.icon(activeNav === item.id)}
