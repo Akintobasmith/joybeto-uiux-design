@@ -35,7 +35,7 @@ export default function ActionButtons() {
   ]
 
   return (
-    <div className="mx-3.5 my-2.5 bg-[#141428] rounded-3.5 p-3 flex gap-2 border border-[#1e1e35]">
+    <div className="mx-3.5 my-2.5 bg-[#141428] rounded-3.5 p-3 flex gap-2 border border-[#1e1e35] mt-5">
       {actions.map((action) => (
         <Link key={action.id} href={action.href} className="flex-1 flex flex-col items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
           <div

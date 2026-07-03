@@ -3,13 +3,6 @@ import Image from 'next/image'
 export default function Header() {
   return (
     <div className="bg-[#0d0d1a] px-4 py-2 flex items-center justify-between">
-      {/* Menu Icon */}
-      <div className="flex flex-col gap-1 cursor-pointer">
-        <span className="w-4.5 h-0.5 bg-white rounded block"></span>
-        <span className="w-4.5 h-0.5 bg-white rounded block"></span>
-        <span className="w-4.5 h-0.5 bg-white rounded block"></span>
-      </div>
-
       {/* Logo */}
       <div className="flex items-center gap-1.5">
         <div className="w-8 h-8 flex items-center justify-center">
@@ -18,7 +11,7 @@ export default function Header() {
             alt="Joybeto" 
             width={32} 
             height={32}
-            className="w-full h-full object-contain"
+            className="w-full h-full object-contain bg-transparent bg-gradient-to-r from-transparent via-white to-transparent"
           />
         </div>
         <div>
@@ -39,7 +32,7 @@ export default function Header() {
         </div>
 
         {/* Profile */}
-        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#3a4a8a] to-[#2a3a6a] border-2 border-[#2a4a8a] flex items-center justify-center text-white text-[11px] font-bold cursor-pointer">SA</div>
+        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#3a4a8a] to-[#2a3a6a] border-2 border-[#2a4a8a] flex items-center justify-center text-white text-[11px] font-bold cursor-pointer" style={{ fontFamily: '"Playfair Display", serif' }}>SA</div>
       </div>
     </div>
   )
